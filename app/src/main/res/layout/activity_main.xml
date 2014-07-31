@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearView"
+        android:layout_width="match_parent"
+        android:weightSum="1"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button1" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/button1"
+            android:background="@drawable/bg_button2" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/button2"
+            android:background="@drawable/bg_button3" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/button3"
+            android:background="@drawable/bg_button4" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/button4"
+            android:background="@drawable/bg_button5" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_below="@id/linearView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        tools:ignore="MergeRootFrame" />
+
+</RelativeLayout>
